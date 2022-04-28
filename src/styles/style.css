@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.headerNav{
+    background-color: rgb(74, 116, 40);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+.imgLogo{
+    background-position: 150px 125px;
+}
+.headerNav{
+    display:grid;
+
+    
+}
+.tituloHeader1{
+    color: hotpink  ;
+}
