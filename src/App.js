@@ -1,12 +1,17 @@
 import Navbar1 from "./components/Navbar/Navbar";
+import Card1 from "./components/Cards/Cards";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar1 />
-    </div>
-  )
+      <Card1 />
+    </>
+  );
 }
+
+
+export default App;
 /*function App() {
   <Navbar />
       const Array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,];
@@ -35,5 +40,5 @@ function App() {
       )
     }*/
 
-export default App;
+
 

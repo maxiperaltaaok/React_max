@@ -19,3 +19,16 @@ body{
 .tituloHeader1{
     color: hotpink  ;
 }
+.cartIcon{
+    width: 35px;
+    height: 35px ;
+    margin-left:30px;
+}
+.botonCart{
+    background-color: transparent;
+    border: transparent;
+    padding: 0px;
+}
+.imgCard{
+   
+}

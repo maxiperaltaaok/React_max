@@ -1,4 +1,6 @@
+import CartIcon from "../CartIcon/CartIcon";
 import {Navbar, Container, Nav, NavDropdown, Form, FormControl, Button,} from "react-bootstrap"
+
 export default function Navbar1(){
     return (
         <header className="headerNav">
@@ -38,11 +40,17 @@ export default function Navbar1(){
         />
         <Button variant="outline-light">Search</Button>
       </Form>
+      <CartIcon className="cartJs" count={0}/>
           </Navbar.Collapse>
-          
         </Container>
       </Navbar>
+      
+  
       </header>
+          
+      
+  
+
 
         
         /*<header className="header">
