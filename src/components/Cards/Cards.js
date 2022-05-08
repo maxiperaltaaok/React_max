@@ -12,6 +12,7 @@ export default function Card1(){
   }
 return(
   <>
+  <div className="CardsDsiplay">
 <Card style={{ width: '18rem' }}>
   <Card.Img  className="imgCard" variant="top" src="./patagonia.png"/>
   <Card.Body>
@@ -19,12 +20,44 @@ return(
     <Card.Text>
       Patagonia Craft Drinks
     </Card.Text>
-    <Button variant="primary" onClick={()=> setCount(count + 1)}>+</Button>
+    <div className="botones">
+    <Button className="claseBoton" variant="primary" onClick={()=> setCount(count + 1)}>Agregar</Button>
     {count}
-    <Button variant="secondary"  onClick={handleRest}>-</Button>
+    <Button variant="secondary"  onClick={handleRest}>Quitar</Button>
+    </div>
   </Card.Body>
 </Card> 
+<Card style={{ width: '18rem' }}>
+  <Card.Img  className="imgCard" variant="top" src="./patagonia 3.png"/>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Patagonia Craft Drinks
+    </Card.Text>
+    <div className="botones">
+    <Button className="claseBoton" variant="primary" onClick={()=> setCount(count + 1)}>Agregar</Button>
+    {count}
+    <Button variant="secondary"  onClick={handleRest}>Quitar</Button>
+    </div>
+  </Card.Body>
+</Card> 
+<Card style={{ width: '18rem' }}>
+  <Card.Img  className="imgCard" variant="top" src="./patagonia1.png"/>
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Patagonia Craft Drinks
+    </Card.Text>
+    <div className="botones">
+    <Button className="claseBoton" variant="primary" onClick={()=> setCount(count + 1)}>Agregar</Button>
+    {count}
+    <Button variant="secondary"  onClick={handleRest}>Quitar</Button>
+    </div>
+  </Card.Body>
+</Card> 
+</div>
 {text}
+
 </>
 );
 }

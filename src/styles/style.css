@@ -29,6 +29,14 @@ body{
     border: transparent;
     padding: 0px;
 }
-.imgCard{
-   
+.CardsDsiplay{
+   display:flex;
+   justify-content: space-around;
+   margin-top: 2em;
+
 }
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+

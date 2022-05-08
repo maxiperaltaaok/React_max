@@ -1,6 +1,7 @@
 import CartIcon from "../CartIcon/CartIcon";
 import {Navbar, Container, Nav, NavDropdown, Form, FormControl, Button,} from "react-bootstrap"
 
+
 export default function Navbar1(){
     return (
         <header className="headerNav">
@@ -44,7 +45,6 @@ export default function Navbar1(){
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      
   
       </header>
           
@@ -61,3 +61,4 @@ export default function Navbar1(){
         </header>*/
     );
 }
+
