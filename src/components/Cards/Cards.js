@@ -1,18 +1,30 @@
+import React from "react";
 import {Card,Button,} from "react-bootstrap"
 
+
 export default function Card1(){
+  const [text,] = React.useState()
+  const [count, setCount] = React.useState(0)
+  const  handleRest = () => {
+    if(count > 0){
+      setCount (count -1 )
+    }
+  }
 return(
+  <>
 <Card style={{ width: '18rem' }}>
   <Card.Img  className="imgCard" variant="top" src="./patagonia.png"/>
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+      Patagonia Craft Drinks
     </Card.Text>
-    <Button variant="primary">+</Button>
-    <Button variant="secondary">-</Button>
+    <Button variant="primary" onClick={()=> setCount(count + 1)}>+</Button>
+    {count}
+    <Button variant="secondary"  onClick={handleRest}>-</Button>
   </Card.Body>
-</Card>
+</Card> 
+{text}
+</>
 );
 }
