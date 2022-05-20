@@ -1,7 +1,6 @@
 import Navbar1 from "./components/Navbar/Navbar";
+import React from "react";
 import Card1 from "./components/Cards/Cards";
-import Item from "./components/Cards/itemContainerFunction";
-
 
 
 
@@ -10,13 +9,11 @@ function App() {
     <>
       <Navbar1 />
       <Card1 />
-      <Item />
       
+       
     </>
   );
-}
-
-
+  }
 export default App;
 
 
