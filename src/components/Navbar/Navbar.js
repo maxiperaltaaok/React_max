@@ -1,5 +1,6 @@
 import CartIcon from "../CartIcon/CartIcon";
-import {Navbar, Container, Nav, NavDropdown, Form, FormControl, Button,} from "react-bootstrap"
+import {Navbar, Container, Nav, NavDropdown, Form, FormControl, Button,} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 
 export default function Navbar1(){
@@ -17,13 +18,13 @@ export default function Navbar1(){
       />
     </Navbar.Brand>
     <Container className="tituloHeader">
-          <Navbar.Brand href="#home">Nombre de Marca </Navbar.Brand>
+          <Navbar.Brand> <Link to= "/">Nombre de Marca </Link> </Navbar.Brand>
   </Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
+              <Nav.Link><Link to= "/">Home </Link></Nav.Link>
+              <Nav.Link><Link to= "/Products">Productos</Link></Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -41,7 +42,7 @@ export default function Navbar1(){
         />
         <Button variant="outline-light">Search</Button>
       </Form>
-      <CartIcon className="cartJs" count={0}/>
+      <CartIcon className="cartJs" count={0}> </CartIcon>
           </Navbar.Collapse>
         </Container>
       </Navbar>
