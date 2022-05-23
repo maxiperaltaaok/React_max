@@ -1,18 +1,19 @@
-import Navbar1 from "./components/Navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import Card1 from "./components/Cards/Cards";
-
-
+import Home from "./views/Home/Home";
+import Cart from "./views/Cart/Cart";
+import Products from "./views/Products/Products";
 
 function App() {
   return (
-    <>
-      <Navbar1 />
-      <Card1 />
-      
-       
-    </>
-  );
+    <BrowserRouter>
+    <Routes>
+    <Route exact path="/" element={<Home/>}/>
+    <Route exact path="products" element={<Products/>}/>
+    <Route exact path="cart" element={<Cart/>}/>
+    </Routes>
+    </BrowserRouter> 
+  )
   }
 export default App;
 

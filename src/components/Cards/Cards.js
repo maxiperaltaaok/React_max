@@ -1,6 +1,6 @@
 import React from "react";
 import {Card,Button,} from "react-bootstrap"
-import {products} from "../data/products";
+import {Products1} from "../data/products";
 
 
 export default function Card1 ({producto}){
@@ -21,15 +21,10 @@ export default function Card1 ({producto}){
     console.log(results)
   })*/
   
-return(
-
-  
+return(  
   <>
-
-
-
  <div className="CardsDsiplay">
- {products.map((product, i) => {
+ {Products1.map((product, i) => {
 
 return (
   <div key ={product.id}>

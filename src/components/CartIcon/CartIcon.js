@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { products } from "../data/products";
+import { Products1 } from "../data/products";
 
 export default function CartIcon({count}){
     const [cart, setCart] = useState([])
@@ -13,13 +13,13 @@ export default function CartIcon({count}){
         </button>
     </div>
 
-    {products.map((producto)=> (
+    {Products1.map((producto)=> (
     <producto
-    key={products.id}
+    key={producto.id}
     producto={producto}
     cart={cart}
     setCart={setCart}
-    products={products}
+    Products1={Products1}
     />
 )       )}
 </>
