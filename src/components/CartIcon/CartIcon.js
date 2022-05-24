@@ -8,11 +8,12 @@ export default function CartIcon({count}){
     return(
         <>
     <div>
+        <Link to= "/Cart">
         <button className="botonCart">
         <img className="cartIcon" src="./shopping-cart.png" alt="iconoCarrito" />
         {count}
-        <Link to= "/Cart"></Link>
         </button>
+        </Link>
     </div>
 
     {Products1.map((producto)=> (
