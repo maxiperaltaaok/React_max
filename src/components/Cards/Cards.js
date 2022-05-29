@@ -1,9 +1,15 @@
 import React from "react";
 import {Card,Button,} from "react-bootstrap"
 import {Products1} from "../data/products";
+import { useParams } from "react-router-dom";
+
+
 
 
 export default function Card1 ({producto}){
+  const{categoryId} = useParams(); 
+  React.useEffect(()=>{
+  },[]);
   const [text,] = React.useState()
   const [count, setCount] = React.useState(0) 
   const  handleRest = () => {
@@ -42,13 +48,10 @@ return (
     </div>
     </Card.Text>
     </Card.Body>
+    
 </Card> 
   </div>
   )})}
-
-   
-
-
 </div>
 {text}
 

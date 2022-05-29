@@ -1,16 +1,16 @@
 import React, { useEffect } from "react" 
 import ItemList from '../ItemList/ItemList';
-import {products} from "../data/products";
+import {Products1} from "../data/products";
    export default function ItemListContainer(){
         const[item, setItem] = React.useState([])
         useEffect( () => {
         const getItem = new Promise((resolve,reject) =>{
             setTimeout(() =>{
-                resolve(products);
+                resolve();
             },4000)
         }).then(() => {
-            console.log("getItem")
-            setItem(products[2]);
+            console.log(getItem)
+            setItem(Products1[2]);
         }) 
         
     },[])
