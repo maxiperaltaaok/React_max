@@ -4,6 +4,7 @@ import Cart from "./views/Cart/Cart";
 import Products from "./views/Products/Products";
 import Product from "./views/Product/Product";
 import Category from "./views/Category/Category";
+import Cuenta from "./views/Cuenta/Cuenta";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route exact path="/cart" element={<Cart/>}></Route>
     <Route exact path="/product/:id" element={<Product/>}></Route>
     <Route exact path="/category/:id" element={<Category/>}></Route>
+    <Route exact path="/cuenta" element={<Cuenta/>}></Route>
     </Routes>
     </BrowserRouter>    
   );
